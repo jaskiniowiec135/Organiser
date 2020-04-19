@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Models
+namespace Domain.Interfaces
 {
-    public class Class1
+    public interface IStoreManager
     {
+        IUserStore UserStore { get; }
+        IGenericStore<T> Set<T>();
     }
 }

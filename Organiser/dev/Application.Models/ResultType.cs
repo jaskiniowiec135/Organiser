@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Application.Models
 {
-    public class Class1
+    public enum ResultType
     {
+        Ok,
+        BadRequest,
+        Failed,
+        Unauthorized,
+        Forbidden,
+        Invalid
     }
 }

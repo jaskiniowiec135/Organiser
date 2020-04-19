@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Infrastructure.Data
+namespace Domain.Interfaces
 {
-    public class Class1
+    public interface IGenericStore<T>
     {
+        List<T> Data { get; set; }
     }
 }

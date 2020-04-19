@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Infrastructure.Business
+namespace Application.Interfaces
 {
-    public class Class1
+    public interface IBaseService
     {
+        IEnumerable<string> Validate(object model);
     }
 }
