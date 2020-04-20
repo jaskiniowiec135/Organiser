@@ -57,12 +57,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BasePageViewModel.cs" />
+    <Compile Include="IoCConfig.cs" />
+    <Compile Include="MainPageViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Application.Interfaces\Application.Interfaces.csproj">
+      <Project>{6E454C69-6DF1-49E0-AB64-DA899B9E556F}</Project>
+      <Name>Application.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Application.Models\Application.Models.csproj">
+      <Project>{8C8AB061-2340-4C85-9F88-C1483A964D4A}</Project>
+      <Name>Application.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

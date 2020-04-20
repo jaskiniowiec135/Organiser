@@ -29,20 +29,20 @@ namespace Clients.ViewModel
         /// </summary>
         public ViewModelLocator()
         {
-            ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
+            var iocConfig = new IoCConfig();
+            iocConfig.RegisterRepositories();
+            iocConfig.RegisterProviders();
+            iocConfig.RegisterServices();
+            iocConfig.RegisterViewModels();
+            iocConfig.RegisterStores();
+        }
 
-            ////if (ViewModelBase.IsInDesignModeStatic)
-            ////{
-            ////    // Create design time view services and models
-            ////    SimpleIoc.Default.Register<IDataService, DesignDataService>();
-            ////}
-            ////else
-            ////{
-            ////    // Create run time view services and models
-            ////    SimpleIoc.Default.Register<IDataService, DataService>();
-            ////}
-
-            SimpleIoc.Default.Register<MainViewModel>();
+        public MainPageViewModel MainPage
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<MainPageViewModel>();
+            }
         }
 
         public MainViewModel Main
