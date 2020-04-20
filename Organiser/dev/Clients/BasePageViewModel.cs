@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Clients
 {
-    public class Class1
+    class BasePageViewModel : ViewModelBase
     {
     }
 }
