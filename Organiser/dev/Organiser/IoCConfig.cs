@@ -1,17 +1,12 @@
 ﻿using Application.Interfaces;
-using Clients.ViewModel;
 using CommonServiceLocator;
 using Domain.Interfaces;
 using GalaSoft.MvvmLight.Ioc;
 using Infrastructure.Business;
 using Infrastructure.Data;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Organiser.ViewModel;
 
-namespace Clients
+namespace Organiser
 {
     public class IoCConfig
     {

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Data
 {
-    class UserStore : GenericStore<User>, IUserStore
+    public class UserStore : GenericStore<User>, IUserStore
     {
     }
 }

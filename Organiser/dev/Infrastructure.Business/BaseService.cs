@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Business
 {
-    class BaseService : IBaseService
+    public class BaseService : IBaseService
     {
         public BaseService()
         {

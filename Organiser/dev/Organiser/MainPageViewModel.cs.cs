@@ -1,13 +1,13 @@
 ﻿using Application.Interfaces;
 using Application.Models;
-using Clients.ViewModel;
+using Organiser.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Clients
+namespace Organiser
 {
     public class MainPageViewModel : BaseViewModel
     {
