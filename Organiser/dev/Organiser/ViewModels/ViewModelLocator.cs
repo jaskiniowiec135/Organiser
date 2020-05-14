@@ -1,7 +1,7 @@
 /*
   In App.xaml:
   <Application.Resources>
-      <vm:ViewModelLocator xmlns:vm="clr-namespace:Client"
+      <vm:ViewModelLocator xmlns:vm="clr-namespace:Organiser"
                            x:Key="Locator" />
   </Application.Resources>
   
@@ -16,7 +16,7 @@ using CommonServiceLocator;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
 
-namespace Client.ViewModel
+namespace Organiser.ViewModels
 {
     /// <summary>
     /// This class contains static references to all the view models in the
@@ -43,19 +43,6 @@ namespace Client.ViewModel
             {
                 return ServiceLocator.Current.GetInstance<MainPageViewModel>();
             }
-        }
-
-        public MainViewModel Main
-        {
-            get
-            {
-                return ServiceLocator.Current.GetInstance<MainViewModel>();
-            }
-        }
-        
-        public static void Cleanup()
-        {
-            // TODO Clear the ViewModels
         }
     }
 }

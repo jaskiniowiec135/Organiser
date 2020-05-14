@@ -6,12 +6,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Infrastructure.Data
+namespace Infrastructure.Data.Stores
 {
-    public class GenericStore<T> : IGenericStore<T>
+    class BaseStore<T> : IGenericStore<T>
     {
         public List<T> Data { get; set; }
-        public GenericStore()
+        public BaseStore()
         {
             Data = new List<T>();
         }

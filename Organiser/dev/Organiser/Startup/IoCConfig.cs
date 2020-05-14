@@ -1,17 +1,17 @@
 ﻿using Application.Interfaces;
-using Application.Models;
-using Infrastructure.Business;
-using Infrastructure.Data;
-using Client.ViewModel;
 using CommonServiceLocator;
 using Domain.Interfaces;
-using GalaSoft.MvvmLight.Ioc;
-using System;
+using Domain.Interfaces.DataProviders;
 using Domain.Interfaces.Repositories;
 using Domain.Interfaces.Stores;
+using GalaSoft.MvvmLight.Ioc;
+using Infrastructure.Business;
+using Infrastructure.Data;
+using Infrastructure.Data.DataProviders;
 using Infrastructure.Data.Stores;
+using Organiser.ViewModels;
 
-namespace Client
+namespace Organiser
 {
     public class IoCConfig
     {
@@ -37,8 +37,8 @@ namespace Client
 
         public void RegisterProviders()
         {
-            //SimpleIoc.Default.Register<IUserDataProvider, UserDataProvider>();
-            //SimpleIoc.Default.Register<ICloudStorageProvider, AzureStorageDataProvider>(); // this is where you would change the registration to use a different provider
+            SimpleIoc.Default.Register<IUserDataProvider, UserDataProvider>();
+            SimpleIoc.Default.Register<ICloudStorageProvider, AzureStorageDataProvider>(); // this is where you would change the registration to use a different provider
         }
 
         public void RegisterStores()

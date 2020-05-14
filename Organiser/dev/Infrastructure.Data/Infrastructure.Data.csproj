@@ -41,11 +41,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GenericMemoryRepository.cs" />
+    <Compile Include="DataProviders\AzureStorageDataProvider.cs" />
+    <Compile Include="DataProviders\GenericDataProvider.cs" />
+    <Compile Include="DataProviders\UserDataProvider.cs" />
+    <Compile Include="Repositories\GenericFileStorageRepository.cs" />
+    <Compile Include="Repositories\GenericMemoryRepository.cs" />
     <Compile Include="GenericStore.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserRepository.cs" />
-    <Compile Include="UserStore.cs" />
+    <Compile Include="Repositories\GenericSqlLiteRepository.cs" />
+    <Compile Include="Stores\BaseStore.cs" />
+    <Compile Include="Stores\StoreManager.cs" />
+    <Compile Include="Repositories\UserRepository.cs" />
+    <Compile Include="Stores\UserStore.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain.Interfaces\Domain.Interfaces.csproj">
+      <Project>{D624FA64-07D6-47E3-AD59-5247776DE3C1}</Project>
+      <Name>Domain.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain.Models\Domain.Models.csproj">
+      <Project>{194A6D63-2884-42B1-87FC-DCDFCA79088C}</Project>
+      <Name>Domain.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

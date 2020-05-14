@@ -1,6 +1,7 @@
 ﻿using Application.Interfaces;
 using Application.Models;
 using Domain.Interfaces;
+using Domain.Interfaces.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;

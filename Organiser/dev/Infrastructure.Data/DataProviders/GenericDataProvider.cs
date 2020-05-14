@@ -1,0 +1,13 @@
+﻿using Domain.Interfaces.DataProviders;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Infrastructure.Data.DataProviders
+{
+    public class GenericDataProvider<T> : IGenericDataProvider<T>
+    {
+    }
+}
