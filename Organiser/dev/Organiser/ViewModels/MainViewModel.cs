@@ -1,7 +1,9 @@
-using Application.Interfaces;
-using Application.Models;
-using GalaSoft.MvvmLight;
+﻿using Organiser.Application.Interfaces.Services;
+using Organiser.Application.Models.Input;
+using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace Organiser.ViewModels

@@ -1,12 +1,11 @@
-﻿using System;
+﻿using GalaSoft.MvvmLight;
+using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using GalaSoft.MvvmLight;
+using System.Text;
 
 namespace Organiser.ViewModels
 {
-	/// <summary>
-	/// View model that all others should inherit
-	/// </summary>
 	public class BaseViewModel : ViewModelBase
 	{
 		private bool _isLoading;
