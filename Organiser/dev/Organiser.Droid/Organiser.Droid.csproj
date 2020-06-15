@@ -117,6 +117,10 @@
       <Project>{BE1CF262-1DE1-4F6C-9D21-5FEB2265CD18}</Project>
       <Name>Organiser.Application.Interfaces</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Organiser.Domain.Models\Organiser.Domain.Models.csproj">
+      <Project>{5230617B-2739-4D1B-B8EF-7DF3F3D6FC4C}</Project>
+      <Name>Organiser.Domain.Models</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Organiser\Organiser.csproj">
       <Project>{dfddcf4e-d624-407c-beef-0b6e1831f2e7}</Project>
       <Name>Organiser</Name>
